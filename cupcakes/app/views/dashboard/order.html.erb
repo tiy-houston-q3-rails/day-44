@@ -1,0 +1,6 @@
+<h3> Your order id: <%=@order.id%> </h3>
+<% @order.lineitems.each do |item| %>
+
+  <h3> <%= item.cupcake.name %> -<%= item.quantity%></h3>
+
+<% end %>
