@@ -1,0 +1,7 @@
+
+<%  @photos.photo.take(5).each do |photo| %>
+  <%
+    info = flickr.photos.getInfo :photo_id => photo.id, :secret => photo.secret
+   %>
+  <%= debug info %>
+<% end %>
